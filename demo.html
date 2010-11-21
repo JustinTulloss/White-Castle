@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo of smooth animations</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="slider.css" />
+    </head>
+    <body>
+        <div id="header">
+            <button id="toggle">Toggle</button>
+        </div>
+        <div id="container">
+            <div id="message">
+                This is a dialog. It should slide in and out because Apple told
+                us that's how attractive UI elements work.
+                <div class="buttons">
+                    <button>Ok</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            $('#toggle').click(function(e) {
+                $('#message').toggleClass('slideIn');
+            });
+        </script>
+    </body>
+</html>
